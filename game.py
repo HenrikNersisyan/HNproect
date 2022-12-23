@@ -26,6 +26,7 @@ def stop():
     pygame.mixer.music.stop()
 def pause():
     pygame.mixer.music.pause()
+    #second cdkcdcsdcksdcg
 def unpause():
     pygame.mixer.music.unpause()
     #jfhjfjfhajfhajsf
