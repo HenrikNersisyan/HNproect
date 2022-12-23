@@ -3,26 +3,10 @@ import tkinter as tkr
 from tkinter.filedialog import askdirectory
 import os
 
-music_player = tkr.Tk()
-music_player.title("My Music Player")
-music_player.geometry("450x350")
-directory = askdirectory()
-os.chdir(directory)
-song_list = os.listdir()
 
-play_list = tkr.Listbox(music_player, font="Helvetica 12 bold", bg='yellow', selectmode=tkr.SINGLE)
-for item in song_list:
-    pos = 0
-    play_list.insert(pos, item)
-    pos += 1
-pygame.init()
-pygame.mixer.init()
+#444444444
 
-def play():
-    pygame.mixer.music.load(play_list.get(tkr.ACTIVE))
-    var.set(play_list.get(tkr.ACTIVE))
-    pygame.mixer.music.play()
-def stop():
+
     pygame.mixer.music.stop()
 def pause():
     pygame.mixer.music.pause()
